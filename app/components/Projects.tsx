@@ -1,0 +1,118 @@
+"use client";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+import Image from "next/image";
+import potholeImage from "../assets/pothole.png";
+import jarvisImage from "../assets/jarvis.png";
+import foodImage from "../assets/food.png";
+import ssbImage from "../assets/ssb.jpg";
+import todoImage from "../assets/todo.png";
+
+const projects = [
+  {
+    title: "eNivaran",
+    color: "#4CAF50",
+    desc: "A Smart pothole detection web platform developed using React, Flask, Python, and machine learning, integrating Geopy for location services and Firebase. It automates pothole detection and provides real-time reporting.",
+    image: potholeImage,
+    link: "#",
+    category: "ML & Web Development | 2024"
+  },
+  {
+    title: "J.A.R.V.I.S",
+    color: "#2196F3",
+    desc: "A Multi-lingual AI chatbot designed to enable seamless cross-language communication through intelligent conversational flows and integrated language processing modules.",
+    image: jarvisImage,
+    link: "https://multilingual-chatbot-nine.vercel.app/",
+    category: "AI & NLP | 2025"
+  },
+  {
+    title: "Food Wagon",
+    color: "#FF9800",
+    desc: "A Responsive food-ordering website built using HTML, CSS, JavaScript, and Bootstrap, featuring an intuitive user interface for seamless menu browsing and order placement.",
+    image: foodImage,
+    link: "https://food-wagon-nu.vercel.app/",
+    category: "Frontend Development | 2023"
+  },
+  {
+    title: "lakshyaSSB",
+    color: "#d41e1eff",
+    desc: "An SSB preparation web platform designed to help defence aspirants systematically prepare for the Services Selection Board (SSB) process with structured resources and practice materials.",
+    image: ssbImage,
+    link: "#",
+    category: "Full Stack Development | 2025"
+  },
+  {
+    title: "Todo-List",
+    color: "#dc13e3ff",
+    desc: "A Simple and efficient ToDo List web application designed to help users organize tasks, manage priorities, and track progress easily through a clean and intuitive interface.",
+    image: todoImage,
+    link: "#",
+    category: "Backend Development | 2025"
+  },
+];
+
+export default function Projects() {
+  return (
+    <section id="projects" className="bg-white dark:bg-[#001F3D] py-20 px-4">
+      <p className="text-center text-sm tracking-[0.3em] uppercase opacity-70 mb-2">
+          What I have Contribute
+        </p>
+      <h2 className="text-5xl font-bold text-gray-900 dark:text-white text-center mb-16">Projects</h2>
+      <div className="max-w-6xl mx-auto flex flex-col gap-24">
+        {projects.map((project, i) => (
+          <ProjectCard key={i} i={i} {...project} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function ProjectCard({ title, color, desc, image, link, i, likes, category }: any) {
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start end", "start start"],
+  });
+
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.9 - i * 0.05]);
+
+  return (
+    <div ref={container} className="h-screen sticky top-24 flex items-center justify-center">
+      <motion.div
+        style={{ scale, backgroundColor: color, top: `calc(-5% + ${i * 25}px)` }}
+        className="relative h-[550px] w-full rounded-[2rem] p-8 md:p-12 shadow-2xl overflow-hidden border border-white/20 flex flex-col md:flex-row gap-10 text-white"
+      >
+
+        <div className="flex-1 flex flex-col justify-center h-full">
+          <p className="text-sm font-medium opacity-80 mb-2 uppercase tracking-wider">{category}</p>
+          <h3 className="text-4xl md:text-5xl font-bold mb-4 text-nature-yellow">{title}</h3>
+
+          <div className="w-full h-[1px] bg-white/30 mb-6" />
+
+          <p className="text-lg leading-relaxed opacity-90 mb-8 line-clamp-6">
+            {desc}
+          </p>
+
+          <a
+            href={link}
+            target="_blank"
+            className="bg-white text-black px-8 py-3 rounded-xl w-fit font-bold text-lg hover:bg-nature-green transition-colors shadow-lg"
+          >
+            Website ➡️
+          </a>
+        </div>
+
+        <div className="flex-1 relative h-full hidden md:block group">
+          <div className="relative w-full h-full rounded-2xl overflow-hidden border-4 border-black/20 shadow-2xl">
+            <Image
+              src={image}
+              alt={title}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        </div>
+      </motion.div>
+    </div>
+  );
+}
