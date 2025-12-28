@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import kargilFlagImage from "../assets/kargil-flag.jpg";
 
 export default function Contact() {
   return (
@@ -10,7 +11,7 @@ export default function Contact() {
 
         <div className="relative h-[400px] md:h-[600px] w-full rounded-sm overflow-hidden shadow-2xl">
           <Image
-            src="/kargil-flag.jpg"
+            src={kargilFlagImage}
             alt="National Flag at Dras"
             fill
             className="object-cover"
