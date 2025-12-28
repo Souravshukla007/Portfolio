@@ -80,10 +80,10 @@ function ProjectCard({ title, color, desc, image, link, i, likes, category }: an
     <div ref={container} className="h-screen sticky top-24 flex items-center justify-center">
       <motion.div
         style={{ scale, backgroundColor: color, top: `calc(-5% + ${i * 25}px)` }}
-        className="relative h-[550px] w-full rounded-[2rem] p-8 md:p-12 shadow-2xl overflow-hidden border border-white/20 flex flex-col md:flex-row gap-10 text-white"
+        className="relative h-auto md:h-[550px] w-full rounded-[2rem] p-8 md:p-12 shadow-2xl overflow-hidden border border-white/20 flex flex-col md:flex-row gap-8 text-white"
       >
 
-        <div className="flex-1 flex flex-col justify-center h-full">
+        <div className="flex flex-col flex-1">
           <p className="text-sm font-medium opacity-80 mb-2 uppercase tracking-wider">{category}</p>
           <h3 className="text-4xl md:text-5xl font-bold mb-4 text-nature-yellow">{title}</h3>
 
@@ -93,16 +93,18 @@ function ProjectCard({ title, color, desc, image, link, i, likes, category }: an
             {desc}
           </p>
 
-          <a
-            href={link}
-            target="_blank"
-            className="bg-white text-black px-8 py-3 rounded-xl w-fit font-bold text-lg hover:bg-nature-green transition-colors shadow-lg"
-          >
-            Website ➡️
-          </a>
+          <div className="flex justify-start mt-auto">
+            <a
+              href={link}
+              target="_blank"
+              className="bg-white text-black px-8 py-3 rounded-xl w-fit font-bold text-lg hover:bg-nature-green transition-colors shadow-lg"
+            >
+              Website ➡️
+            </a>
+          </div>
         </div>
 
-        <div className="flex-1 relative h-full hidden md:block group">
+        <div className="relative h-48 md:h-64 group flex-shrink-0">
           <div className="relative w-full h-full rounded-2xl overflow-hidden border-4 border-black/20 shadow-2xl">
             <Image
               src={image}
