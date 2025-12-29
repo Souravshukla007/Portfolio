@@ -80,16 +80,16 @@ function ProjectCard({ title, color, desc, image, link, i, likes, category }: an
     <div ref={container} className="h-screen sticky top-24 flex items-center justify-center">
       <motion.div
         style={{ scale, backgroundColor: color, top: `calc(-5% + ${i * 25}px)` }}
-        className="relative h-auto md:h-[550px] w-full rounded-[2rem] p-8 md:p-12 shadow-2xl overflow-hidden border border-white/20 flex flex-col md:flex-row gap-8 text-white"
+        className="relative h-auto md:h-[550px] w-full rounded-[2rem] p-8 md:p-12 shadow-2xl overflow-hidden border border-white/20 grid grid-cols-1 md:grid-cols-2 gap-8 text-white"
       >
 
         <div className="flex flex-col flex-1">
           <p className="text-sm font-medium opacity-80 mb-2 uppercase tracking-wider">{category}</p>
-          <h3 className="text-4xl md:text-5xl font-bold mb-4 text-nature-yellow">{title}</h3>
+          <h3 className="text-4xl md:text-7xl font-bold mb-4 text-nature-yellow">{title}</h3>
 
-          <div className="w-full h-[1px] bg-white/30 mb-6" />
+          <div className="w-full h-[5px] bg-white/30 mb-6" />
 
-          <p className="text-lg leading-relaxed opacity-90 mb-8 line-clamp-6">
+          <p className="text-lg md:text-2xl leading-relaxed opacity-90 mb-2 line-clamp-6">
             {desc}
           </p>
 
