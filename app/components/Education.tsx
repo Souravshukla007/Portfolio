@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import ScrollFloat from '../../components/ScrollFloat';
 
 const educationData = [
   {
@@ -43,7 +44,7 @@ export function Education() {
         <p className="text-center text-sm tracking-[0.3em] uppercase opacity-70 mb-2">
           What I have studied so far
         </p>
-        <h2 className="text-6xl md:text-7xl font-bold text-center mb-20">Education</h2>
+        <ScrollFloat containerClassName="font-bold text-center mb-20" textClassName="text-6xl md:text-7xl">Education</ScrollFloat>
 
         <div className="relative">
           <div className="absolute left-1/2 -translate-x-1/2 w-[2px] bg-gray-900/20 dark:bg-white/20 h-full hidden md:block" />

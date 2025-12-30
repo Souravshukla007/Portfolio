@@ -9,6 +9,8 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Typewriter from "./components/Typewriter";
+import BackgroundParticles from "./components/BackgroundParticles";
+import BlurText from "../components/BlurText";
 import profileImage from "./assets/profile.jpg";
 
 export default function Home() {
@@ -25,14 +27,15 @@ export default function Home() {
         {showIntro ? (
           <IntroLoader key="intro" onComplete={handleIntroComplete} />
         ) : (
-          <main key="main" className="min-h-screen">
+          <main key="main" className="min-h-screen relative">
+            <BackgroundParticles />
             <section className="min-h-screen bg-white dark:bg-[#001F3D] flex items-center justify-center px-4">
               <div className="text-center text-gray-900 dark:text-white">
                 <div className="mb-8">
                   <img
                     src={profileImage.src}
                     alt="Profile"
-                    className="w-[300px] h-[300px] rounded-full object-cover mx-auto transition-all duration-300 hover:grayscale hover:[transform:rotateY(180deg)] active:grayscale active:[transform:rotateY(180deg)] cursor-pointer"
+                    className="w-[300px] h-[300px] rounded-full object-cover mx-auto transition-all duration-300 hover:grayscale active:grayscale cursor-pointer"
                   />
                 </div>
 
@@ -43,9 +46,12 @@ export default function Home() {
                     className="text-nature-green"
                   />
                 </h1>
-                <p className="text-xl md:text-2xl text-gray-900/80 dark:text-white/80 max-w-2xl mx-auto">
-                  I’m a pre-final year Computer Science student specializing in Data Science & Analytics, passionate about building user-focused, data-driven web applications and intelligent systems. I enjoy turning ideas into scalable, impactful products using modern technologies and AI.
-                </p>
+                <BlurText
+                  text="I’m a pre-final year Computer Science student specializing in Data Science & Analytics, passionate about building user-focused, data-driven web applications and intelligent systems. I enjoy turning ideas into scalable, impactful products using modern technologies and AI."
+                  animateBy="letters"
+                  delay={50}
+                  className="text-xl md:text-2xl text-gray-900/80 dark:text-white/80 max-w-2xl mx-auto"
+                />
               </div>
             </section>
 

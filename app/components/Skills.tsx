@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import ScrollFloat from '../../components/ScrollFloat';
 import {
   FaPython,
   FaJs,
@@ -106,9 +107,9 @@ export default function Skills() {
           <p className="text-nature-green text-sm tracking-widest uppercase mb-2">
             What I work with
           </p>
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white">
+          <ScrollFloat containerClassName="font-bold text-gray-900 dark:text-white" textClassName="text-4xl md:text-6xl">
             Skills & Technologies
-          </h2>
+          </ScrollFloat>
         </motion.div>
 
         <motion.div
@@ -117,9 +118,9 @@ export default function Skills() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-16"
         >
-          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">
+          <ScrollFloat tag="h3" containerClassName="font-bold text-gray-900 dark:text-white text-center mb-8" textClassName="text-2xl md:text-3xl">
             Languages
-          </h3>
+          </ScrollFloat>
           <div className="flex flex-wrap justify-center gap-6 md:gap-8">
             {skillsData.languages.map((skill, index) => (
               <SkillBubble key={skill.name} skill={skill} index={index} />
@@ -132,9 +133,9 @@ export default function Skills() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">
+          <ScrollFloat tag="h3" containerClassName="font-bold text-gray-900 dark:text-white text-center mb-8" textClassName="text-2xl md:text-3xl">
             Frameworks & Tools
-          </h3>
+          </ScrollFloat>
           <div className="flex flex-wrap justify-center gap-6 md:gap-8">
             {skillsData.frameworks.map((skill, index) => (
               <SkillBubble key={skill.name} skill={skill} index={index} />

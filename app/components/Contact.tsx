@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import ScrollFloat from '../../components/ScrollFloat';
 import { FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 import kargilFlagImage from "../assets/kargil-flag.jpg";
 
@@ -20,9 +21,9 @@ export default function Contact() {
         </div>
 
         <div className="flex flex-col">
-          <h1 className="text-7xl md:text-9xl font-black tracking-tighter mb-10 text-gray-900 dark:text-white">
+          <ScrollFloat tag="h2" containerClassName="font-black tracking-tighter mb-10 text-gray-900 dark:text-white" textClassName="text-7xl md:text-9xl">
             Contact Me
-          </h1>
+          </ScrollFloat>
 
           <div className="border border-gray-900 dark:border-white p-8 md:p-12 relative">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-15">

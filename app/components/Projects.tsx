@@ -1,6 +1,7 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import ScrollFloat from '../../components/ScrollFloat';
 import Image from "next/image";
 import potholeImage from "../assets/pothole.png";
 import jarvisImage from "../assets/jarvis.png";
@@ -53,11 +54,11 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="bg-white dark:bg-[#001F3D] py-20 px-4">
+    <section id="projects" className="relative bg-white dark:bg-[#001F3D] py-20 px-4">
       <p className="text-center text-sm tracking-[0.3em] uppercase opacity-70 mb-2">
           What I have Contribute
         </p>
-      <h2 className="text-5xl font-bold text-gray-900 dark:text-white text-center mb-16">Projects</h2>
+      <ScrollFloat containerClassName="font-bold text-gray-900 dark:text-white text-center mb-16" textClassName="text-5xl">Projects</ScrollFloat>
       <div className="max-w-6xl mx-auto flex flex-col gap-24">
         {projects.map((project, i) => (
           <ProjectCard key={i} i={i} {...project} />

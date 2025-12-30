@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 export default function IntroLoader({ onComplete }: { onComplete: () => void }) {
-  const words = ["नमस्ते", "Hello", "Hola", "Bonjour","こんにちは","Привет"];
+  const words = ["नमस्ते", "Hello", "Hola", "こんにちは","Привет"];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
