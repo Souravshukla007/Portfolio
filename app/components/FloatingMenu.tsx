@@ -62,7 +62,7 @@ export default function FloatingMenu() {
         }}
         className="text-gray-900 dark:text-white flex items-center justify-center"
       >
-        <span className="text-6xl">{isOpen ? "🔺" : "👩‍💻"}</span>
+        <span className="text-4xl">{isOpen ? "🔺" : "👩‍💻"}</span>
       </motion.button>
     </div>
   );

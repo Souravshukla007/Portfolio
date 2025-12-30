@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import ScrollFloat from '../../components/ScrollFloat';
 import { FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import PixelTransition from '../../components/PixelTransition';
 import kargilFlagImage from "../assets/kargil-flag.jpg";
 
 export default function Contact() {
@@ -10,15 +11,40 @@ export default function Contact() {
     <section id="contact" className="bg-gray-50 dark:bg-[#001F3D] text-gray-900 dark:text-white py-24 px-6 md:px-20 min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-        <div className="relative h-[400px] md:h-[600px] w-full rounded-sm overflow-hidden shadow-2xl">
-          <Image
-            src={kargilFlagImage}
-            alt="National Flag at Dras"
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
+        <PixelTransition
+          firstContent={
+            <Image
+              src={kargilFlagImage}
+              alt="National Flag at Dras"
+              fill
+              className="object-cover"
+              priority
+            />
+          }
+          secondContent={
+            <div
+              style={{
+                width: "100%",
+                height: "100%",
+                display: "grid",
+                placeItems: "center",
+                backgroundColor: "#111"
+              }}
+            >
+              <p style={{ fontWeight: 900, fontSize: "3rem", color: "#ffffff" }}>Jai Hind</p>
+            </div>
+          }
+          gridSize={12}
+          pixelColor='#ffffff'
+          once={false}
+          animationStepDuration={0.7}
+          className="h-[400px] md:h-[600px] w-full rounded-sm shadow-2xl"
+          style={{
+            backgroundColor: 'transparent',
+            border: 'none',
+            borderRadius: '0.125rem'
+          }}
+        />
 
         <div className="flex flex-col">
           <ScrollFloat tag="h2" containerClassName="font-black tracking-tighter mb-10 text-gray-900 dark:text-white" textClassName="text-7xl md:text-9xl">
