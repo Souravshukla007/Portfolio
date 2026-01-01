@@ -63,6 +63,10 @@ export default function Home() {
 
             <Contact />
 
+            <footer className="py-8 text-center text-gray-900 dark:text-white bg-gray-50 dark:bg-[#001F3D]">
+              <p>© 2026 Sourav Sukla Baidya. All rights reserved.</p>
+            </footer>
+
             <FloatingMenu />
           </main>
         )}

@@ -41,7 +41,7 @@ export function Education() {
   return (
     <section id="experience" className="bg-white dark:bg-[#001F3D] text-gray-900 dark:text-white py-24 px-4 overflow-hidden">
       <div className="max-w-6xl mx-auto">
-        <p className="text-center text-sm tracking-[0.3em] uppercase opacity-70 mb-2">
+        <p className="text-center text-sm tracking-[0.3em] uppercase opacity-70 mb-2 text-nature-green">
           What I have studied so far
         </p>
         <ScrollFloat containerClassName="font-bold text-center mb-20" textClassName="text-6xl md:text-7xl">Education</ScrollFloat>

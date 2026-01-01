@@ -17,8 +17,10 @@ const BackgroundParticles: React.FC = () => {
   if (theme === 'light') {
     return (
       <div className="fixed inset-0 -z-10">
-        <div className="relative h-full w-full">
-          <div className="absolute inset-0 bg-gradient-to-b from-blue-200 to-white"></div>
+        <div className="absolute inset-0">
+          <div className="relative h-full w-full [&>div]:absolute [&>div]:bottom-0 [&>div]:right-0 [&>div]:z-[-2] [&>div]:h-full [&>div]:w-full [&>div]:bg-gradient-to-b [&>div]:from-blue-400 [&>div]:to-white">
+            <div></div>
+          </div>
         </div>
       </div>
     );
