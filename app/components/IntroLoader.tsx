@@ -20,7 +20,7 @@ export default function IntroLoader({ onComplete }: { onComplete: () => void }) 
       initial={{ y: 0 }}
       exit={{ y: "-100%" }}
       transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
-      className="fixed inset-0 z-[100] bg-nature-red flex items-center justify-center text-white text-6xl font-bold"
+      className="fixed inset-0 z-[100] bg-nature-blue flex items-center justify-center text-white text-6xl font-bold"
     >
       <AnimatePresence mode="wait">
         <motion.span
