@@ -13,18 +13,28 @@ const BackgroundParticles: React.FC = () => {
 
   const { theme } = context as { theme: string; toggleTheme: () => void };
 
-  // Use different colors based on theme
-  const particleColors = theme === 'dark' ? ['#ffffff', '#ffffff'] : ['#001F3D', '#001F3D'];
+  // For light mode, use gradient background instead of particles
+  if (theme === 'light') {
+    return (
+      <div className="fixed inset-0 -z-10">
+        <div className="relative h-full w-full">
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-200 to-white"></div>
+        </div>
+      </div>
+    );
+  }
+
+  // Use different colors based on theme for dark mode particles
+  const particleColors = ['#ffffff', '#ffffff'];
 
   return (
     <div className="fixed inset-0 -z-10">
       <Particles
         particleColors={particleColors}
-        particleCount={150}
-        particleSpread={8}
-        speed={0.05}
-        particleBaseSize={50}
-        cameraDistance={15}
+        particleCount={200}
+        particleSpread={10}
+        speed={0.1}
+        particleBaseSize={100}
         moveParticlesOnHover={true}
         alphaParticles={false}
         disableRotation={false}

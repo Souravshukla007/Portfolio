@@ -93,14 +93,29 @@ export default function Contact() {
             </div>
 
             <div className="mt-12 flex flex-col md:flex-row items-center justify-between gap-8">
-              <button className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-12 py-4 rounded-full text-lg font-bold hover:bg-nature-green transition-all transform active:scale-95">
-                Contact Us
+              <button className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-12 py-4 rounded-full text-lg font-bold relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#0000FF] before:to-[#00BFFF] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0">
+                Contact Me
               </button>
 
-              <div className="flex gap-6 text-xl">
-                <a href="#" className="hover:text-nature-red transition-colors"><FaLinkedin /></a>
-                <a href="#" className="hover:text-nature-yellow transition-colors"><FaInstagram /></a>
-                <a href="#" className="hover:text-nature-green transition-colors"><FaTwitter /></a>
+              <div className="flex gap-6 text-2xl">
+                <div className="group relative">
+                  <a href="#" className="transition-colors">
+                    <FaLinkedin className="hover:scale-125 duration-200 hover:text-nature-red" />
+                  </a>
+                  <span className="absolute -top-14 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 px-3 rounded-lg border border-gray-300 bg-white py-2 text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">LinkedIn</span>
+                </div>
+                <div className="group relative">
+                  <a href="#" className="transition-colors">
+                    <FaInstagram className="hover:scale-125 duration-200 hover:text-nature-yellow" />
+                  </a>
+                  <span className="absolute -top-14 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 px-3 rounded-lg border border-gray-300 bg-white py-2 text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">Instagram</span>
+                </div>
+                <div className="group relative">
+                  <a href="#" className="transition-colors">
+                    <FaTwitter className="hover:scale-125 duration-200 hover:text-nature-green" />
+                  </a>
+                  <span className="absolute -top-14 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 px-3 rounded-lg border border-gray-300 bg-white py-2 text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">Twitter</span>
+                </div>
               </div>
             </div>
           </div>
