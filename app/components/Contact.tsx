@@ -47,7 +47,7 @@ export default function Contact() {
         />
 
         <div className="flex flex-col">
-          <ScrollFloat tag="h2" containerClassName="font-black tracking-tighter mb-10 text-gray-900 dark:text-white" textClassName="text-7xl md:text-9xl">
+          <ScrollFloat tag="h2" containerClassName="font-black tracking-tighter mb-10 text-gray-900 dark:text-white" textClassName="text-7xl md:text-7xl">
             Contact Me
           </ScrollFloat>
 

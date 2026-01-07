@@ -44,7 +44,7 @@ export function Education() {
         <p className="text-center text-sm tracking-[0.3em] uppercase opacity-70 mb-2 text-nature-blue">
           What I have studied so far
         </p>
-        <ScrollFloat containerClassName="font-bold text-center mb-20" textClassName="text-6xl md:text-7xl">Education</ScrollFloat>
+        <ScrollFloat containerClassName="font-black text-center mb-20" textClassName="text-7xl md:text-7xl">Education</ScrollFloat>
 
         <div className="relative">
           <div className="absolute left-1/2 -translate-x-1/2 w-[2px] bg-gray-900/20 dark:bg-white/20 h-full hidden md:block" />

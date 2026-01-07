@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Typewriter from "./components/Typewriter";
-import BackgroundParticles from "./components/BackgroundParticles";
+
 import BlurText from "../components/BlurText";
 import profileImage from "./assets/profile.jpg";
 
@@ -28,7 +28,6 @@ export default function Home() {
           <IntroLoader key="intro" onComplete={handleIntroComplete} />
         ) : (
           <main key="main" className="min-h-screen relative">
-            <BackgroundParticles />
             <section className="min-h-screen bg-white dark:bg-[#040D12] flex items-center justify-center px-4">
               <div className="text-center text-gray-900 dark:text-white">
                 <div className="mb-8">

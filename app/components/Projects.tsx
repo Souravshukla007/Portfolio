@@ -58,7 +58,7 @@ export default function Projects() {
       <p className="text-center text-sm text-nature-blue tracking-[0.3em] uppercase opacity-70 mb-2">
           What I have Contribute
         </p>
-      <ScrollFloat containerClassName="font-bold text-gray-900 dark:text-white text-center mb-16" textClassName="text-5xl">Projects</ScrollFloat>
+      <ScrollFloat containerClassName="font-black text-gray-900 dark:text-white text-center mb-16" textClassName="text-7xl md:text-7xl">Projects</ScrollFloat>
       <div className="max-w-6xl mx-auto flex flex-col gap-24">
         {projects.map((project, i) => (
           <ProjectCard key={i} i={i} {...project} />
@@ -98,15 +98,15 @@ function ProjectCard({ title, color, desc, image, link, i, likes, category }: an
             <a
               href={link}
               target="_blank"
-              className="bg-white text-black px-8 py-3 rounded-full w-fit font-bold text-lg hover:bg-nature-green transition-colors shadow-lg"
+              className="bg-white text-black px-8 py-3 rounded-full w-fit font-bold text-xl hover:bg-nature-blue transition-colors shadow-lg"
             >
-              Website
+              Website ↗
             </a>
           </div>
         </div>
 
         <div className="relative h-48 md:h-64 group flex-shrink-0">
-          <div className="relative w-full h-full rounded-2xl overflow-hidden border-4 border-black/20 shadow-2xl">
+          <div className="relative mt-35 w-full h-full rounded-2xl overflow-hidden border-4 border-black/20 shadow-2xl">
             <Image
               src={image}
               alt={title}
