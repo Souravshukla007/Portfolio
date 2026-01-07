@@ -31,7 +31,7 @@ export default function Contact() {
                 backgroundColor: "#111"
               }}
             >
-              <p style={{ fontWeight: 900, fontSize: "3rem", color: "#ffffff" }}>Jai Hind</p>
+              <p style={{ fontWeight: 900, fontSize: "3rem", color: "#ffffff" }}>Jai Hind </p>
             </div>
           }
           gridSize={12}
