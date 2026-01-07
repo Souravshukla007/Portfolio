@@ -6,11 +6,11 @@
 
 .light {
   --theme-primary: #ffffff;
-  --theme-secondary: #001F3D;
+  --theme-secondary: #040D12;
 }
 
 .dark {
-  --theme-primary: #001F3D;
+  --theme-primary: #040D12;
   --theme-secondary: #ffffff;
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -95,7 +95,7 @@ html {
   --color-nature-red: #ED553B;
   --color-nature-white: #F1F1F1;
   --color-nature-dark: #1D3557;
-  --color-theme-dark: #001F3D;
+  --color-theme-dark: #040D12;
   --color-theme-light: #ffffff;
 
   --animate-glitch-after: glitch var(--after-duration) infinite linear alternate-reverse;

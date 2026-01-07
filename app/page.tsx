@@ -29,7 +29,7 @@ export default function Home() {
         ) : (
           <main key="main" className="min-h-screen relative">
             <BackgroundParticles />
-            <section className="min-h-screen bg-white dark:bg-[#001F3D] flex items-center justify-center px-4">
+            <section className="min-h-screen bg-white dark:bg-[#040D12] flex items-center justify-center px-4">
               <div className="text-center text-gray-900 dark:text-white">
                 <div className="mb-8">
                   <img
@@ -43,12 +43,12 @@ export default function Home() {
                   <Typewriter
                     text="Hello, I'm Full Stack Developer"
                     speed={150}
-                    className="text-nature-green"
+                    className="text-nature-blue"
                   />
                 </h1>
                 <BlurText
                   text="I’m a pre-final year Computer Science student specializing in Data Science & Analytics, passionate about building user-focused, data-driven web applications and intelligent systems. I enjoy turning ideas into scalable, impactful products using modern technologies and AI."
-                  animateBy="letters"
+                  animateBy="words"
                   delay={50}
                   className="text-xl md:text-2xl text-gray-900/80 dark:text-white/80 max-w-2xl mx-auto"
                 />
@@ -63,7 +63,7 @@ export default function Home() {
 
             <Contact />
 
-            <footer className="py-8 text-center text-gray-900 dark:text-white bg-gray-50 dark:bg-[#001F3D]">
+            <footer className="py-8 text-center text-gray-900 dark:text-white bg-gray-50 dark:bg-[#040D12]">
               <p>© 2026 Sourav Sukla Baidya. All rights reserved.</p>
             </footer>
 

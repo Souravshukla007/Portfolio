@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { FaFilePdf } from "react-icons/fa";
 import { useTheme } from "./ThemeProvider";
-import FuzzyText from "./FuzzyText";
+
 
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
@@ -22,35 +22,35 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-[60] bg-white/95 dark:bg-[#001F3D]/95 backdrop-blur-md border-b border-gray-900/10 dark:border-white/10 px-6 py-4">
+    <nav className="sticky top-0 z-[60] bg-white/95 dark:bg-[#040D12]/95 backdrop-blur-md border-b border-gray-900/10 dark:border-white/10 px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
 
         <div className="text-2xl font-bold tracking-tight inline-flex">
           <Link href="/">
-            <FuzzyText
-              fontSize="1.5rem"
-              fontWeight={700}
-              fontFamily="inherit"
-              color="#F6D55C"
-              letterSpacing={-0.025}
-              className="text-nature-yellow"
-              clickEffect
-              glitchMode
+            <span
+              className="text-nature-green"
+              style={{
+                fontSize: '1.5rem',
+                fontWeight: 700,
+                fontFamily: 'inherit',
+                color: '#1877F2',
+                letterSpacing: -0.025
+              }}
             >
               Sourav
-            </FuzzyText>
-            <FuzzyText
-              fontSize="1.5rem"
-              fontWeight={700}
-              fontFamily="inherit"
-              color={theme === 'dark' ? '#ffffff' : '#111827'}
-              letterSpacing={-0.025}
+            </span>
+            <span
               className="text-gray-900 dark:text-white ml-2"
-              clickEffect
-              glitchMode
+              style={{
+                fontSize: '1.5rem',
+                fontWeight: 700,
+                fontFamily: 'inherit',
+                color: theme === 'dark' ? '#ffffff' : '#111827',
+                letterSpacing: -0.025
+              }}
             >
               Sukla Baidya
-            </FuzzyText>
+            </span>
           </Link>
         </div>
 
@@ -112,7 +112,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-[#001F3D] border-b border-gray-200 dark:border-gray-700 shadow-lg">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-[#040D12] border-b border-gray-200 dark:border-gray-700 shadow-lg">
           <div className="px-6 py-4">
             <ul className="space-y-4">
               {navLinks.map((link) => (

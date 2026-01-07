@@ -96,7 +96,7 @@ const SkillBubble = ({ skill, index }: { skill: any; index: number }) => {
 
 export default function Skills() {
   return (
-    <section id="skills" className="bg-white dark:bg-[#001F3D] py-20 px-4">
+    <section id="skills" className="bg-white dark:bg-[#040D12] py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -104,7 +104,7 @@ export default function Skills() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-nature-green text-sm tracking-widest uppercase mb-2">
+          <p className="text-nature-blue text-sm tracking-widest uppercase mb-2">
             What I work with
           </p>
           <ScrollFloat containerClassName="font-bold text-gray-900 dark:text-white" textClassName="text-4xl md:text-6xl">

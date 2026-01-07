@@ -54,8 +54,8 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative bg-white dark:bg-[#001F3D] py-20 px-4">
-      <p className="text-center text-sm text-nature-green tracking-[0.3em] uppercase opacity-70 mb-2">
+    <section id="projects" className="relative bg-white dark:bg-[#040D12] py-20 px-4">
+      <p className="text-center text-sm text-nature-blue tracking-[0.3em] uppercase opacity-70 mb-2">
           What I have Contribute
         </p>
       <ScrollFloat containerClassName="font-bold text-gray-900 dark:text-white text-center mb-16" textClassName="text-5xl">Projects</ScrollFloat>

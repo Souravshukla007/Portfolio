@@ -8,7 +8,7 @@ import kargilFlagImage from "../assets/kargil-flag.jpg";
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-gray-50 dark:bg-[#001F3D] text-gray-900 dark:text-white py-24 px-6 md:px-20 min-h-screen flex items-center">
+    <section id="contact" className="bg-gray-50 dark:bg-[#040D12] text-gray-900 dark:text-white py-24 px-6 md:px-20 min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
         <PixelTransition
@@ -112,7 +112,7 @@ export default function Contact() {
                 </div>
                 <div className="group relative">
                   <a href="#" className="transition-colors">
-                    <FaTwitter className="hover:scale-150 duration-300 hover:text-nature-green" />
+                    <FaTwitter className="hover:scale-150 duration-300 hover:text-nature-blue" />
                   </a>
                   <span className="absolute -top-14 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 px-3 rounded-lg border border-gray-300 bg-white py-2 text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">Twitter</span>
                 </div>
