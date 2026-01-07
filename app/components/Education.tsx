@@ -12,7 +12,7 @@ const educationData = [
   },
   {
     institution: "Army Public School (APS), Golconda, Hyderabad",
-    degree: "Senior Secondary Education (Class 11 & 12)",
+    degree: "Senior Secondary Education (Class 9th-12th)",
     date: "2018 - 2022",
     activities: "Basketball, Badminton",
     skills: "Team Leadership",
@@ -65,10 +65,10 @@ export function Education() {
                         : "right-0 md:right-0 md:ml-[55%]"
                     }`}
                   >
-                    <h3 className="text-xl font-bold text-nature-yellow group-hover:text-nature-green transition-colors">
+                    <h3 className="text-xl font-bold text-nature-blue group-hover:text-nature-green-light transition-colors">
                       {item.institution}
                     </h3>
-                    <p className="text-nature-green font-medium mt-1">{item.degree}</p>
+                    <p className="text-nature-green font-medium mt-1 group-hover:text-nature-red transition-colors">{item.degree}</p>
                     <p className="text-sm opacity-60 italic mb-4">{item.date}</p>
 
                     {item.activities && (
