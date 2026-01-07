@@ -35,7 +35,7 @@ export default function FloatingMenu() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0 }}
                   transition={{ delay: idx * 0.1 }}
-                  className="absolute text-gray-900 dark:text-white hover:text-nature-green transition-colors"
+                  className="absolute text-gray-900 dark:text-white hover:text-nature-blue transition-colors"
                   style={{
                     left: `${x}px`,
                     top: `${y}px`,

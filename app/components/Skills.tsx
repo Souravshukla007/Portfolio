@@ -107,7 +107,7 @@ export default function Skills() {
           <p className="text-nature-blue text-sm tracking-widest uppercase mb-2">
             What I work with
           </p>
-          <ScrollFloat containerClassName="font-black text-gray-900 dark:text-white" textClassName="text-7xl md:text-7xl">
+          <ScrollFloat containerClassName="font-black text-gray-900 dark:text-white" textClassName="text-8xl md:text-7xl">
             Skills & Technologies
           </ScrollFloat>
         </motion.div>

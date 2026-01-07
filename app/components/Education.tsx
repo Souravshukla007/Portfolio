@@ -44,7 +44,7 @@ export function Education() {
         <p className="text-center text-sm tracking-[0.3em] uppercase opacity-70 mb-2 text-nature-blue">
           What I have studied so far
         </p>
-        <ScrollFloat containerClassName="font-black text-center mb-20" textClassName="text-7xl md:text-7xl">Education</ScrollFloat>
+        <ScrollFloat containerClassName="font-black text-center mb-20" textClassName="text-8xl md:text-7xl">Education</ScrollFloat>
 
         <div className="relative">
           <div className="absolute left-1/2 -translate-x-1/2 w-[2px] bg-gray-900/20 dark:bg-white/20 h-full hidden md:block" />
@@ -59,7 +59,7 @@ export function Education() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: idx * 0.1 }}
-                    className={`absolute w-full md:w-[45%] p-6 rounded-2xl border border-gray-900/10 dark:border-white/10 bg-gray-50/50 dark:bg-white/5 backdrop-blur-sm hover:border-nature-green transition-colors group shadow-xl ${
+                    className={`absolute w-full md:w-[45%] p-6 rounded-2xl border border-white/30 bg-gray-50/30 dark:bg-white/10 backdrop-blur-md hover:border-nature-green transition-colors group shadow-2xl ${
                       isLeft
                         ? "left-0 md:left-0 md:mr-[55%]"
                         : "right-0 md:right-0 md:ml-[55%]"

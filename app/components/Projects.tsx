@@ -58,7 +58,7 @@ export default function Projects() {
       <p className="text-center text-sm text-nature-blue tracking-[0.3em] uppercase opacity-70 mb-2">
           What I have Contribute
         </p>
-      <ScrollFloat containerClassName="font-black text-gray-900 dark:text-white text-center mb-16" textClassName="text-7xl md:text-7xl">Projects</ScrollFloat>
+      <ScrollFloat containerClassName="font-black text-gray-900 dark:text-white text-center mb-16" textClassName="text-8xl md:text-7xl">Projects</ScrollFloat>
       <div className="max-w-6xl mx-auto flex flex-col gap-24">
         {projects.map((project, i) => (
           <ProjectCard key={i} i={i} {...project} />
@@ -77,11 +77,21 @@ function ProjectCard({ title, color, desc, image, link, i, likes, category }: an
 
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.9 - i * 0.05]);
 
+  // Convert hex color to rgba with 80% opacity for transparency
+  const hexToRgba = (hex: string, alpha: number = 0.8) => {
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  };
+
+  const transparentColor = hexToRgba(color, 0.65);
+
   return (
     <div ref={container} className="h-screen sticky top-24 flex items-center justify-center">
       <motion.div
-        style={{ scale, backgroundColor: color, top: `calc(-5% + ${i * 25}px)` }}
-        className="relative h-auto md:h-[550px] w-full rounded-[2rem] p-8 md:p-12 shadow-2xl overflow-hidden border border-white/20 grid grid-cols-1 md:grid-cols-2 gap-8 text-white"
+        style={{ scale, backgroundColor: transparentColor, top: `calc(-5% + ${i * 25}px)` }}
+        className="relative h-auto md:h-[550px] w-full rounded-[2rem] p-8 md:p-12 shadow-2xl overflow-hidden border border-white/30 backdrop-blur-md grid grid-cols-1 md:grid-cols-2 gap-8 text-white"
       >
 
         <div className="flex flex-col flex-1">
@@ -98,7 +108,7 @@ function ProjectCard({ title, color, desc, image, link, i, likes, category }: an
             <a
               href={link}
               target="_blank"
-              className="bg-white text-black px-8 py-3 rounded-full w-fit font-bold text-xl hover:bg-nature-blue transition-colors shadow-lg"
+              className="bg-white text-black px-8 py-3 rounded-full w-fit font-bold text-2xl hover:bg-nature-blue transition-colors shadow-lg"
             >
               Website ↗
             </a>
@@ -106,7 +116,7 @@ function ProjectCard({ title, color, desc, image, link, i, likes, category }: an
         </div>
 
         <div className="relative h-48 md:h-64 group flex-shrink-0">
-          <div className="relative mt-35 w-full h-full rounded-2xl overflow-hidden border-4 border-black/20 shadow-2xl">
+          <div className="relative md:mt-35 w-full h-full rounded-2xl overflow-hidden border-4 border-black/20 shadow-2xl">
             <Image
               src={image}
               alt={title}

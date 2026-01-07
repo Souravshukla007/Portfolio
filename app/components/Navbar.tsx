@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-[60] bg-white/70 dark:bg-[#040D12]/65 backdrop-blur-md border-b border-gray-900/10 dark:border-white/10 px-6 py-4">
+    <nav className="sticky top-0 z-[60] bg-white/65 dark:bg-[#040D12]/65 backdrop-blur-md border-b border-gray-900/10 dark:border-white/10 px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
 
         <div className="text-2xl font-bold tracking-tight inline-flex">
@@ -119,7 +119,7 @@ const Navbar = () => {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="block text-gray-900 dark:text-white text-lg font-medium hover:text-nature-yellow transition-colors duration-300"
+                    className="block text-gray-900 dark:text-white text-lg font-medium hover:text-nature-blue transition-colors duration-300"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {link.name}
