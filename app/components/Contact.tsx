@@ -100,19 +100,19 @@ export default function Contact() {
               <div className="flex gap-6 text-2xl">
                 <div className="group relative">
                   <a href="#" className="transition-colors">
-                    <FaLinkedin className="hover:scale-125 duration-200 hover:text-nature-red" />
+                    <FaLinkedin className="hover:scale-150 duration-300 hover:text-nature-red" />
                   </a>
                   <span className="absolute -top-14 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 px-3 rounded-lg border border-gray-300 bg-white py-2 text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">LinkedIn</span>
                 </div>
                 <div className="group relative">
                   <a href="#" className="transition-colors">
-                    <FaInstagram className="hover:scale-125 duration-200 hover:text-nature-yellow" />
+                    <FaInstagram className="hover:scale-150 duration-300 hover:text-nature-yellow" />
                   </a>
                   <span className="absolute -top-14 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 px-3 rounded-lg border border-gray-300 bg-white py-2 text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">Instagram</span>
                 </div>
                 <div className="group relative">
                   <a href="#" className="transition-colors">
-                    <FaTwitter className="hover:scale-125 duration-200 hover:text-nature-green" />
+                    <FaTwitter className="hover:scale-150 duration-300 hover:text-nature-green" />
                   </a>
                   <span className="absolute -top-14 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 px-3 rounded-lg border border-gray-300 bg-white py-2 text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">Twitter</span>
                 </div>
