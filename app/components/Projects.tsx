@@ -16,15 +16,15 @@ const projects = [
     desc: "A Smart pothole detection web platform developed using React, Flask, Python, and machine learning, integrating Geopy for location services and Firebase. It automates pothole detection and provides real-time reporting.",
     image: potholeImage,
     link: "#",
-    category: "ML & Web Development | 2024"
+    category: "ML & Web Development | 2025"
   },
   {
-    title: "J.A.R.V.I.S",
+    title: "Memoirly",
     color: "#2196F3",
-    desc: "A Multi-lingual AI chatbot designed to enable seamless cross-language communication through intelligent conversational flows and integrated language processing modules.",
-    image: jarvisImage,
-    link: "https://multilingual-chatbot-nine.vercel.app/",
-    category: "AI & NLP | 2025"
+    desc: "A Simple and efficient ToDo List web application designed to help users organize tasks, manage priorities, and track progress easily through a clean and intuitive interface.",
+    image: todoImage,
+    link: "https://memoirly-alpha.vercel.app/login",
+    category: "Full Stack Development | 2026"
   },
   {
     title: "Food Wagon",
@@ -32,7 +32,7 @@ const projects = [
     desc: "A Responsive food-ordering website built using HTML, CSS, JavaScript, and Bootstrap, featuring an intuitive user interface for seamless menu browsing and order placement.",
     image: foodImage,
     link: "https://food-wagon-nu.vercel.app/",
-    category: "Frontend Development | 2023"
+    category: "Frontend Development | 2024"
   },
   {
     title: "lakshyaSSB",
@@ -40,15 +40,15 @@ const projects = [
     desc: "An SSB preparation web platform designed to help defence aspirants systematically prepare for the Services Selection Board (SSB) process with structured resources and practice materials.",
     image: ssbImage,
     link: "#",
-    category: "Full Stack Development | 2025 (Development Ongoing)"
+    category: "Full Stack Development | 2026 (Development Ongoing)"
   },
   {
-    title: "Todo-List",
+    title: "J.A.R.V.I.S",
     color: "#dc13e3ff",
-    desc: "A Simple and efficient ToDo List web application designed to help users organize tasks, manage priorities, and track progress easily through a clean and intuitive interface.",
-    image: todoImage,
-    link: "#",
-    category: "Backend Development | 2025 (Development Ongoing)"
+    desc: "A Multi-lingual AI chatbot designed to enable seamless cross-language communication through intelligent conversational flows and integrated language processing modules.",
+    image: jarvisImage,
+    link: "https://multilingual-chatbot-nine.vercel.app/",
+    category: "AI & NLP | 2025"
   },
 ];
 
