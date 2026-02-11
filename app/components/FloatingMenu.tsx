@@ -9,7 +9,7 @@ export default function FloatingMenu() {
   const angles = [70, 110, 150, 190];
   const socialLinks = [
     "https://github.com/Souravshukla007",
-    "https://www.linkedin.com/in/sourav-shukla-baidya-6bb132316/",
+    "https://www.linkedin.com/in/sourav-sukla-baidya/",
     "https://www.instagram.com/souravshukla_51?utm_source=qr&igsh=d3VrbWx1ajQ0M3gz",
     "https://x.com/SSB_777"
   ];
