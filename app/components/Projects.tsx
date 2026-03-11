@@ -15,7 +15,7 @@ const projects = [
     color: "#4CAF50",
     desc: "A Smart pothole detection web platform developed using React, Flask, Python, and machine learning, integrating Geopy for location services and Firebase. It automates pothole detection and provides real-time reporting.",
     image: potholeImage,
-    link: "#",
+    link: "https://sadak-sathi-chi.vercel.app/",
     category: "ML & Web Development | 2025"
   },
   {
@@ -39,7 +39,7 @@ const projects = [
     color: "#d41e1eff",
     desc: "An SSB preparation web platform designed to help defence aspirants systematically prepare for the Services Selection Board (SSB) process with structured resources and practice materials.",
     image: ssbImage,
-    link: "#",
+    link: "https://lakshya-ssb.vercel.app/",
     category: "Full Stack Development | 2026 (Development Ongoing)"
   },
   {
