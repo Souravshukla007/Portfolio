@@ -11,6 +11,8 @@ import {
   FaBootstrap,
   FaTable,
   FaFileExcel,
+  FaGitAlt,
+  FaDocker,
 } from "react-icons/fa";
 import {
   SiC,
@@ -22,6 +24,8 @@ import {
   SiTailwindcss,
   SiJquery,
   SiTableau,
+  SiMongodb,
+  SiFirebase,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 
@@ -33,6 +37,7 @@ const skillsData = {
     { name: "JavaScript", icon: FaJs, color: "#F7DF1E" },
     { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
     { name: "SQL", icon: FaDatabase, color: "#336791" },
+    { name: "NoSQL", icon: SiMongodb, color: "#47A248" },
   ],
   frameworks: [
     { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
@@ -50,6 +55,10 @@ const skillsData = {
     { name: "Tableau", icon: SiTableau, color: "#E97627" },
     { name: "Power BI", icon: FaTable, color: "#F2C811" },
     { name: "Excel", icon: FaFileExcel, color: "#217346" },
+    { name: "Git", icon: FaGitAlt, color: "#F05032" },
+    { name: "Docker", icon: FaDocker, color: "#2496ED" },
+    { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
+    { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
   ],
 };
 

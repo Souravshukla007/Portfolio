@@ -8,15 +8,32 @@ import jarvisImage from "../assets/jarvis.png";
 import foodImage from "../assets/food.png";
 import ssbImage from "../assets/ssb.jpg";
 import todoImage from "../assets/todo.png";
+import dashDriveImage from "../assets/dashhdrive.png";
 
 const projects = [
   {
-    title: "eNivaran",
-    color: "#4CAF50",
+    title: "lakshyaSSB",
+    color: "#d41e1eff",
+    desc: "An SSB preparation web platform designed to help defence aspirants systematically prepare for the Services Selection Board (SSB) process with structured resources and practice materials.",
+    image: ssbImage,
+    link: "https://www.lakshyassb.online/",
+    category: "Full Stack Development | 2026"
+  },
+  {
+    title: "DashDrive",
+    color: "#1dd14aff",
+    desc: "A modern ride-booking web application built with Next.js, Tailwind CSS, MongoDB, and Rust, featuring a skeuomorphic 3D dashboard UI, real-time booking, EV-focused mobility, and smart features like “Hospital on Road” and “No Pin No Pay.",
+    image: dashDriveImage,
+    link: "https://dash-drive95.vercel.app/",
+    category: "MERN Stack Development | 2026"
+  },
+  {
+    title: "SadakSathi",
+    color: "#3452bdff",
     desc: "A Smart pothole detection web platform developed using React, Flask, Python, and machine learning, integrating Geopy for location services and Firebase. It automates pothole detection and provides real-time reporting.",
     image: potholeImage,
     link: "https://sadak-sathi-chi.vercel.app/",
-    category: "ML & Web Development | 2025"
+    category: "ML & Web Development | 2026"
   },
   {
     title: "Memoirly",
@@ -33,14 +50,6 @@ const projects = [
     image: foodImage,
     link: "https://food-wagon-nu.vercel.app/",
     category: "Frontend Development | 2024"
-  },
-  {
-    title: "lakshyaSSB",
-    color: "#d41e1eff",
-    desc: "An SSB preparation web platform designed to help defence aspirants systematically prepare for the Services Selection Board (SSB) process with structured resources and practice materials.",
-    image: ssbImage,
-    link: "https://lakshya-ssb.vercel.app/",
-    category: "Full Stack Development | 2026 (Development Ongoing)"
   },
   {
     title: "J.A.R.V.I.S",
