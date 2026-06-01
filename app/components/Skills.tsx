@@ -68,8 +68,8 @@ const SkillBubble = ({ skill, index }: { skill: any; index: number }) => {
         y: {
           repeat: Infinity,
           repeatType: "reverse",
-          duration: 2 + Math.random() * 2,
-          delay: Math.random() * 2,
+          duration: 2 + (index % 3) * 0.5,
+          delay: (index % 2) * 1,
         },
       }}
       whileHover={{
@@ -96,7 +96,7 @@ const SkillBubble = ({ skill, index }: { skill: any; index: number }) => {
 
 export default function Skills() {
   return (
-    <section id="skills" className="bg-white dark:bg-[#040D12] py-20 px-4">
+    <section id="skills" className="bg-white dark:bg-[#040D12] py-24 px-4">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

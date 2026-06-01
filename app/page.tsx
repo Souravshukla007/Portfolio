@@ -28,7 +28,7 @@ export default function Home() {
           <IntroLoader key="intro" onComplete={handleIntroComplete} />
         ) : (
           <main key="main" className="min-h-screen relative">
-            <section className="min-h-screen bg-white dark:bg-[#040D12] flex items-center justify-center px-4">
+            <section id="about" className="min-h-screen bg-white dark:bg-[#040D12] flex items-center justify-center px-4">
               <div className="text-center text-gray-900 dark:text-white">
                 <div className="mb-8">
                   <img
